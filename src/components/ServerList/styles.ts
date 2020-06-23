@@ -9,7 +9,11 @@ export const Container = styled.div`
   padding: 11px 0;
   max-height: 100vh;
   overflow-y: scroll;
+  /*Primeiro para firefox*/
   scrollbar-width: none;
+  :: -webkit-scrollbar{
+    width: 0px;
+  }
 `;
 
 export const Separator = styled.div`
